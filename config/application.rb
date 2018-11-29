@@ -35,6 +35,8 @@ module RailsApiReactBoilerplate
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
+    # request throttle and blocking
+    config.middleware.use Rack::Attack
     # Rack-Cors implementation
     config.middleware.insert_before 0, Rack::Cors do
       allow do
