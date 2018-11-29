@@ -35,7 +35,10 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers', '4.0.0.rc1'
   gem 'rails-controller-testing' # If you are using Rails 5.x
-   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'fabrication'
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rename'
 end
