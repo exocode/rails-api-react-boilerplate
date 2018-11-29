@@ -48,6 +48,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rename'
   gem 'rubocop', require: false
+  gem 'better_errors'
 end
 
 group :development do
